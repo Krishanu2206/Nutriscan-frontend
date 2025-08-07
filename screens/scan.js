@@ -40,7 +40,7 @@ export default function Scan() {
         code:  info //"7622210449283"//"8901012100882"
       };
 
-      const verifycode = await fetch("http://192.168.0.104:8080/api/v1/history/verify", {
+      const verifycode = await fetch("https://nutriscan-backend.onrender.com/api/v1/history/verify", {
         method : 'POST',
         headers : {
           'Content-Type' : "application/json",
@@ -103,7 +103,7 @@ export default function Scan() {
         code : barcode
       };
 
-      const response2 = await fetch("http://192.168.0.104:8080/api/v1/history/createhistory", {
+      const response2 = await fetch("https://food-info-84w7.onrender.com/api/v1/history/createhistory", {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",

@@ -12,7 +12,7 @@ const Postprovider= ({children})=> {
     //get all posts
     const getallposts = async() => {
         try {
-            const response = await fetch("http://192.168.0.104:8080/api/v1/post/getallposts", {
+            const response = await fetch("https://nutriscan-backend.onrender.com/api/v1/post/getallposts", {
                 method : "GET",
                 headers : {
                     'Content-type' : 'application/json',

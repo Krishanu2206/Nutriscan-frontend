@@ -23,7 +23,7 @@ const Register = ({navigation}) => {
           password : password
         };
 
-        const res = await fetch("http://192.168.0.104:8080/api/v1/auth/register", {
+        const res = await fetch("https://nutriscan-backend.onrender.com/api/v1/auth/register", {
           method : "POST",
           headers: {
             "Content-Type" : "application/json",

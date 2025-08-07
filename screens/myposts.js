@@ -20,7 +20,7 @@ const Myposts = ({navigation}) => {
     const getuserposts = async () => {
         try {
             const token = state?.token;
-            const res = await fetch("http://192.168.0.104:8080/api/v1/post/getuserpost", {
+            const res = await fetch("https://nutriscan-backend.onrender.com/api/v1/post/getuserpost", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const Myposts = ({navigation}) => {
     const handleDelete = async (postId) => {
         try {
             const token = state?.token;
-            const res = await fetch(`http://192.168.0.104:8080/api/v1/post/deletepost/${postId}`, {
+            const res = await fetch(`https://nutriscan-backend.onrender.com/api/v1/post/deletepost/${postId}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",

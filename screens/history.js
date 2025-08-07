@@ -21,7 +21,7 @@ const History = ({navigation}) => {
 
   const getuserhistory = async () => {
     try {
-      const res = await fetch("http://192.168.0.104:8080/api/v1/history/gethistory", {
+      const res = await fetch("https://nutriscan-backend.onrender.com/api/v1/history/gethistory", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const History = ({navigation}) => {
 
   const handledelete = async(productId) => {
     try{
-    const deleteresponse = await fetch(`http://192.168.0.104:8080/api/v1/history/deletehistory/${productId}`, {
+    const deleteresponse = await fetch(`https://nutriscan-backend.onrender.com/api/v1/history/deletehistory/${productId}`, {
         method : "DELETE",
         headers : {
             'Content-Type' : "application/json",

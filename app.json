@@ -18,18 +18,26 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions" : ["CAMERA"],
       "supportsRtl": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.krishanubiswas.client"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "babel": {
-      "plugins": ["@babel/plugin-transform-export-namespace-from"]
+      "plugins": [
+        "@babel/plugin-transform-export-namespace-from"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "80dd2079-d2b7-4151-a080-dae3047e3d61"
+      }
     }
   }
 }
-

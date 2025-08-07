@@ -17,7 +17,7 @@ const Post = ({ navigation }) => {
     const getuserhistory = async () => {
         try {
             const token = state?.token;
-            const res = await fetch("http://192.168.0.104:8080/api/v1/history/gethistory", {
+            const res = await fetch("https://nutriscan-backend.onrender.com/api/v1/history/gethistory", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const Post = ({ navigation }) => {
                 description: description
             }
             const token = state?.token;
-            const res = await fetch("http://192.168.0.104:8080/api/v1/post/createpost", {
+            const res = await fetch("https://nutriscan-backend.onrender.com/api/v1/post/createpost", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
